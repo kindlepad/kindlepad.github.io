@@ -39,7 +39,12 @@
 </head>
 <body>
 
+<!-- Popping Sound -->
+<audio id="popSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
 <script>
+  const popSound = document.getElementById('popSound');
+
   function createBubble() {
     const bubble = document.createElement('div');
     bubble.classList.add('bubble');
@@ -47,6 +52,8 @@
     bubble.style.animationDuration = (5 + Math.random() * 5) + 's';
 
     bubble.addEventListener('click', () => {
+      popSound.currentTime = 0;
+      popSound.play();
       bubble.classList.add('popped');
       setTimeout(() => bubble.remove(), 300);
     });
