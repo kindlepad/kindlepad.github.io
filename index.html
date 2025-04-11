@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bubble Pop Game</title>
+  <title>Bubble Pop Game - Grayscale</title>
   <style>
     body {
       margin: 0;
       overflow: hidden;
-      background: #aee7ff;
+      background: #ccc; /* Light gray background */
     }
 
     .bubble {
       position: absolute;
       width: 60px;
       height: 60px;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(200, 200, 200, 0.8); /* Light gray bubble */
       border-radius: 50%;
-      box-shadow: 0 0 10px #fff;
+      box-shadow: 0 0 10px #888; /* Soft gray glow */
       animation: floatUp 10s linear infinite;
       cursor: pointer;
       transition: transform 0.2s ease-out, opacity 0.3s;
@@ -39,7 +39,7 @@
 </head>
 <body>
 
-<!-- Popping Sound -->
+<!-- Pop Sound -->
 <audio id="popSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
 
 <script>
